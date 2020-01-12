@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tooltip</title>
+  <style>
+    .tooltip { position: relative; display: inline-block; cursor: pointer; color: #3498db; }
+    .tooltip .text { visibility: hidden; width: 120px; background: #333; color: white; text-align: center; border-radius: 6px; padding: 5px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: 0.3s; }
+    .tooltip:hover .text { visibility: visible; opacity: 1; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Hover for Info</h1>
+  <p style="text-align:center;">
+    <span class="tooltip">Hover me<span class="text">I'm a tooltip!</span></span>
+  </p>
+</body>
+</html>
